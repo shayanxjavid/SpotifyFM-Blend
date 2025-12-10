@@ -26,8 +26,9 @@ npm install
 ### 2️⃣ Create `.env`
 
 ```
-SPOTIFY_CLIENT_ID=xxxx
-SPOTIFY_CLIENT_SECRET=xxxx
+LASTFM_API_KEY =
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
 SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
 SESSION_SECRET=anything
 PORT=3000
