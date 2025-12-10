@@ -13,8 +13,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 // const clientId = process.env.SPOTIFY_CLIENT_ID;
 // const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-const clientId = "15b25050bac14194961cceac08c00a3f";
-const clientSecret = "8e527048844146c5a1524ace1a93ee30";
+const clientId = " ";
+const clientSecret = " ";
 const redirectUri = 'http://localhost:3000/callback';
 const algo = require('./script.js');
 
