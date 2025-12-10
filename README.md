@@ -1,4 +1,4 @@
-# Spotify Blend Viewer 🎶
+# Spotify Blend Viewer
 
 A web app that connects to Spotify, takes **two usernames**, and displays their **Blend playlist** with tracks, artists, and who added each song.
 
@@ -15,15 +15,15 @@ A web app that connects to Spotify, takes **two usernames**, and displays their 
 
 ## Setup
 
-### 1️⃣ Install
+### Install
 
 ```bash
-git clone https://github.com/yourname/spotify-blend.git
+git clone https://github.com/yourname/spotifyfm-blend.git
 cd spotify-blend
 npm install
 ```
 
-### 2️⃣ Create `.env`
+### Create `.env`
 
 ```
 LASTFM_API_KEY =
@@ -40,7 +40,7 @@ Add to `.gitignore`:
 .env
 ```
 
-### 3️⃣ Run
+### Run
 
 ```bash
 npm start
