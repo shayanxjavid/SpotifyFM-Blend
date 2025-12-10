@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,3 +51,57 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Maker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="180x180" href="imgs/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Blend Maker</h1>
+            <p>Enter usernames to create a Blend!</p>
+        </div>
+    </div>    
+    <div class="main-content">
+        <label for="username1">Username 1</label>
+        <input type="text" id="username1" placeholder="Enter Username 1">
+        <label for="username2">Username 2</label>
+        <input type="text" id="username2" placeholder="Enter Username 2">
+        <button id="generatePlaylistBtn" onclick="saveAndRedirect()">
+            <span class="button-text">Generate</span>
+            <div class="spinner" style="display: none;">
+                <div class="spinner-icon"></div>
+            </div>
+        </button>
+    </div>
+    <div id="bubble" class="bubble"></div>
+    <div id="playlistPopup" class="playlist-popup">
+        <span class="close-btn">&times;</span>
+        <ul id="playlistItems"></ul>
+    </div>     
+    <div class="about">
+        <img src="./imgs/Logo.png" alt="Logo" style="height: 100px;">
+        <p>Bringing cross-platform blends to everyone.</p>
+    </div>
+    <script>
+        function saveAndRedirect() {
+            // Get the URLSearchParams object for the current URL
+            var urlParams = new URLSearchParams(window.location.search);
+
+            // Get the access token from the URL
+            var accessToken = urlParams.get('access_token');
+            const name1 = document.getElementById('username1').value;
+            const name2 = document.getElementById('username2').value;
+            window.location.href = 'http://localhost:3000/create-playlist?access_token=' + accessToken + '&user1=' + name1 + '&user2=' + name2;
+        }
+    </script>
+</body>
+</html>
+>>>>>>> 5a2697b2126d8f655901d4ddbe5bab2af9f36391
