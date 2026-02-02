@@ -65,15 +65,6 @@ Login → Spotify OAuth → Fetch Blend Playlist → Render in playlist.ejs
 - EJS templates
 - OAuth 2.0
 
-## File Structure
-
-```
-├── public/          # CSS/JS
-├── views/           # EJS templates
-├── routes/          # auth + playlist
-└── app.js           # Express server
-```
-
 ## License
 
 MIT — use freely.
